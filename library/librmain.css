@@ -1,0 +1,75 @@
+html, body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+  font-family: tahoma;
+}
+
+body{
+  background: url('../home/Mapping/prism.png');
+}
+h1{
+  color: #bbb;
+  font-size: 78px;
+  text-align: center;
+}
+
+.vidContainer{
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: auto;
+  white-space: nowrap;
+
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.video{
+  width: 380px;
+  height: 220px;
+  background: none;
+  position: relative;
+  transform: translate(0, -50%);
+  display: inline-block;
+  top: 50%;
+}
+
+.video iframe{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+
+.bookCont{
+  width: 100%;
+  box-sizing: border-box;
+
+}
+
+.bookCont a span{
+  width: 100%;
+  height: 60px;
+  font-size: 30px;
+  color: #6bdecd;
+  display: inline-block;
+  opacity: 0.6;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  line-height: 60px;
+  padding-left: 22px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.59);
+}
+
+.bookCont a span i{
+    color: #7a82d2;
+}
+.bookCont a span:hover {
+  background: rgba(20, 20, 20, 0.48);
+  opacity: 1;
+}

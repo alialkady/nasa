@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="volunteer/volmain.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js" integrity="sha256-i2Orhi397HWPn93rsCUTW8HBoso65vY/VNTllm9Kuqo=" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <div class="alert-name">
+      <div class="name-cont">
+        <p>Enter Your Name</p>
+        <form>
+          <input type="text" id="name-val" autofocus>
+          <button type="submit" id="name">Ok</button>
+        </form>
+      </div>
+    </div>
+    <div class="mainCont">
+
+
+      <div class="contacts">
+
+        <div class="search">
+          <i class="fas fa-search"></i>
+          <input type="search" placeholder="Find People">
+        </div>
+
+        <div class="user-conts">
+          <div class="cont">
+            <i class="fas fa-globe-americas"></i>
+            <span>World</span>
+            <p>hello i'm new here</p>
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="chat">
+
+        <div class="chat-view" id="chatView">
+
+
+        </div>
+
+        <form class="messaging">
+          <input type="text" id="mess-input" placeholder="Message...">
+          <button type="submit" id="send-but"><i class="fas fa-arrow-right"></i></button>
+        </form>
+
+      </div>
+
+
+
+
+    </div>
+
+
+    <script type="text/javascript" src="volunteer/volmain.js"></script>
+  </body>
+</html>

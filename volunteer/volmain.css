@@ -1,0 +1,315 @@
+html, body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: tahoma;
+}
+
+body{
+
+  background: url('../home/Mapping/prism.png');
+  position: relative;
+}
+
+
+.alert-name{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 55;
+  transition: all 0.5s ease;
+}
+
+.alert-name .name-cont {
+  width: 420px;
+  height: 250px;
+  background: #181626;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 13px;
+}
+
+
+.alert-name .name-cont input, .alert-name .name-cont button{
+  width: 80%;
+  height: 40px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: none;
+  font-size: 22px;
+  box-sizing: border-box;
+}
+
+.alert-name .name-cont input{
+  padding: 2px 2px 2px 12px;
+  color: #111;
+}
+ .alert-name .name-cont button{
+   top: 75%;
+   background: #6e6bc5;
+   color: #fff;
+ }
+
+ .alert-name .name-cont button:hover{
+   cursor: pointer;
+ }
+
+ .alert-name .name-cont p{
+   font-size: 35px;
+   text-align: center;
+   color: #fff;
+ }
+
+
+.mainCont{
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  /* background: #fff; */
+  border-radius: 5px;
+  box-shadow: 6px 6px 20px #000;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.chat{
+  width: 70%;
+  height: 100%;
+  background: #090921;
+  display: inline-block;
+
+}
+
+
+
+
+.chat input, .chat button{
+  height: 40px;
+  padding: 2px 2px 2px 12px;
+  box-sizing: border-box;
+  background: rgb(80, 147, 152);
+  /* rgb(68, 140, 102) */
+  border: none;
+  border-top: 0.5px solid #fff;
+  position: absolute;
+  bottom: 0px;
+  color: #fff;
+  opacity: 0.6;
+  transition: all 0.2s ease;
+}
+
+.chat input{
+  width: 85%;
+  font-size: 20px;
+  float: left;
+}
+
+.chat button{
+  width: 15%;
+  font-size: 28px;
+  right: 0;
+  text-align: center;
+}
+.chat input:focus{
+  opacity: 1;
+}
+.chat input::placeholder{
+  color: #fff;
+}
+
+
+.chat-view{
+  width: 100%;
+  height: 90%;
+  transition: all 1s ease;
+  overflow: scroll;
+}
+
+
+.chat-view::-webkit-scrollbar{
+  display: none;
+}
+
+.chat-view::-moz-scrollbar{
+  display: none;
+}
+
+
+.temp{
+  width: 100%;
+  position: relative;
+  padding: 20px;
+}
+
+
+.temp span, .temp h1, .temp p{
+  color: #fff;
+  display: inline-block;
+
+  margin: 0 0 0 60px;
+
+}
+
+.temp span{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  border-radius: 50%;
+  background: #0f3340;
+  line-height: 58px;
+  text-align: center;
+  overflow: hidden;
+  position: absolute;
+  margin: 0;
+}
+
+.temp p{
+  width: 50%;
+  background: #44447d;
+  border-radius: 5px;
+  padding: 8px 0px 8px 15px;
+  box-sizing: border-box;
+  white-space: normal;
+  font-family: cursive;
+}
+
+.temp h1{
+  font-size: 18px;
+  display: block;
+  color: #aaa;
+}
+
+
+.vol span{
+  background: #5398d8;
+}
+
+.vol p{
+  background: #286d6f;
+}
+
+
+.contacts{
+  width: 30%;
+  height: 100%;
+  background: #254f6f;
+  float: left;
+  border-right: 2px solid #fff;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.contacts .search{
+  width: 80%;
+  position: absolute;
+  height: 40px;
+  background: #fff;
+  transform: translate(-50%, -50%);
+  top: 7%;
+  left: 50%;
+  border-radius: 8px;
+  overflow: hidden;
+  opacity: 0.4;
+  transition: all 0.3s ease;
+}
+
+.contacts .search input{
+  height: 100%;
+  width: 80%;
+  border: none;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: tahoma;
+  padding: 2px 0 2px 12px;
+}
+
+.contacts .search i{
+  width: 17%;
+  height: 100%;
+  font-size: 30px;
+  text-align: center;
+  line-height: 40px;
+  box-sizing: border-box;
+  color: #aaa;
+  float: left;
+}
+
+.search:hover{opacity: 0.8}
+
+.contacts .search input:focus{
+  outline: none;
+  border: none;
+}
+
+.user-conts{
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid #fff;
+  position: absolute;
+  top: 14%;
+}
+
+.user-conts .cont{
+  width: 90%;
+  height: 70px;
+  background: rgba(56, 141, 230, 0.27);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  border-radius: 12px;
+  border-left: 7px solid #499c53;
+}
+
+.user-conts .cont i{
+  width: 70px;
+  height: 70px;
+  font-size: 50px;
+  text-align: center;
+  line-height: 70px;
+  color: #242969;
+}
+
+.user-conts .cont span{
+  font-size: 25px;
+  font-family: tahoma;
+  font-weight: bold;
+  color: #eee;
+  position: absolute;
+  top: 12%;
+}
+
+.user-conts .cont p{
+  font-size: 18px;
+  color: #5e8cae;
+  position: absolute;
+  display: inline-block;
+  top: 32%;
+}
+
+.user-conts .cont i:last-of-type{
+  font-size: 25px;
+  position: absolute;
+  left: 78%;
+  top: -15%;
+  color: #5e8cae;
+}
+
+@media (max-width: 910px){
+  .contacts{
+    display: none;
+  }
+  .chat{
+    width: 100%;
+  }
+}
